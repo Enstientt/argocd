@@ -7,11 +7,8 @@ spec:
   project: default
   source:
     repoURL: git@github.com:Enstientt/argocd.git
-    targetRevision: main
+    targetRevision: HEAD
     path: dev
-    env:
-      - name: SSH_AUTH_SOCK
-        value: /tmp/ssh-SQl2WU4ZexLb/agent.1345
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
